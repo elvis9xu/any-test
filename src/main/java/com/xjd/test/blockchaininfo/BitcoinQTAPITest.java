@@ -83,12 +83,12 @@ public class BitcoinQTAPITest {
 		});
 		
 //		URL url = new URL("http://192.168.51.162:18332");
-		URL url = new URL("http://localhost:18332");
+		URL url = new URL("http://localhost:8332");
 
 		URLConnection urlConn = url.openConnection();
 		urlConn.setDoOutput(true);
 		
-		urlConn.getOutputStream().write("{\"method\":\"getpeerinfo\",\"params\":[],\"id\":\"1\",\"jsonrpc\": \"2.0\"}".getBytes());
+		urlConn.getOutputStream().write("{\"method\":\"getbalance\",\"params\":[],\"id\":\"1\",\"jsonrpc\": \"2.0\"}".getBytes());
 		urlConn.getOutputStream().flush();
 
 		InputStream in;
