@@ -1,4 +1,4 @@
-package com.xjd.test.blockchaininfo;
+package com.xjd.test.bitcoin;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
