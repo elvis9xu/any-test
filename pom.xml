@@ -156,6 +156,20 @@
 			<artifactId>jsonrpc4j</artifactId>
 			<version>1.0</version>
 		</dependency>
+		
+		<!-- ===Netty=== -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty</artifactId>
+			<version>3.5.9.Final</version>
+		</dependency>
+		
+		<!-- ===Memcache Client=== -->
+		<dependency>
+			<groupId>net.spy</groupId>
+			<artifactId>spymemcached</artifactId>
+			<version>2.10.4</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
