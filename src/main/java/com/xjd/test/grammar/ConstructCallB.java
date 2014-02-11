@@ -8,7 +8,8 @@ package com.xjd.test.grammar;
 import java.io.File;
 
 /**
- * 
+ * B[String]-->A[String]-->A[File]
+ * X B[File]
  * @author elvis.xu
  * @version $Id: ConstructCallB.java, v 0.1 2014-2-10 下午12:42:04 elvis.xu Exp $
  */
