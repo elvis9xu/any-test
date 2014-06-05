@@ -10,18 +10,23 @@ public class DateParseTest {
 	 * <pre>
 	 * 
 	 * </pre>
+	 * 
 	 * @author elvis.xu
 	 * @param args
-	 * @throws ParseException 
+	 * @throws ParseException
 	 */
 	public static void main(String[] args) throws ParseException {
-		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd HH:mm:ss");
-		String s1 = "20130102 13:13:13";
-		String s2 = "                 ";
-		String s3 = "";
-		Date d1 = format.parse(s1);
-		Date d2 = format.parse(s2);
-		Date d3 = format.parse(s3);
+		SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
+		SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		
+		String s = "23:59:59";
+		Date date = format.parse(s);
+		System.out.println(format2.format(date));
+		
+		SimpleDateFormat format3 = new SimpleDateFormat("yyyy-MM-dd");
+		Date d = format3.parse(format3.format(new Date()));
+		System.out.println(d.getHours());
+		System.out.println(d.getMinutes());
 	}
 
 }

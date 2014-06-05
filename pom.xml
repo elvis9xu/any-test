@@ -3,20 +3,20 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>com.xjd.test.any</groupId>
 	<artifactId>any-test</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>any-test</name>
-	
+
 	<properties>
 		<java-version>1.6</java-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<org.slf4j-version>1.7.1</org.slf4j-version>
 		<org.springframework-version>3.2.4.RELEASE</org.springframework-version>
 	</properties>
-	
+
 	<dependencies>
 		<!-- ===log=== -->
 		<!-- slf4j + log4j -->
@@ -43,7 +43,7 @@
 			<version>1.2.16</version>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<!-- ===Test=== -->
 		<!-- Junit -->
 		<dependency>
@@ -59,7 +59,7 @@
 			<version>${org.springframework-version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- ===Controller=== -->
 		<!-- Spring MVC -->
 		<dependency>
@@ -72,7 +72,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		
+
 		<!-- ===Service=== -->
 		<!-- Spring Base -->
 		<dependency>
@@ -107,7 +107,7 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.5.4</version>
 		</dependency>
-		
+
 		<!-- ===DAO=== -->
 		<!-- Spring JDBC -->
 		<dependency>
@@ -137,7 +137,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.19</version>
 		</dependency>
-		
+
 		<!-- ===Utils=== -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -150,20 +150,27 @@
 			<version>1.0.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.46</version>
+			<optional>true</optional>
+		</dependency>
+		
 		<!-- ===JSON-RPC=== -->
 		<dependency>
 			<groupId>com.github.briandilley.jsonrpc4j</groupId>
 			<artifactId>jsonrpc4j</artifactId>
 			<version>1.0</version>
 		</dependency>
-		
+
 		<!-- ===Netty=== -->
 		<dependency>
 			<groupId>io.netty</groupId>
 			<artifactId>netty</artifactId>
 			<version>3.5.9.Final</version>
 		</dependency>
-		
+
 		<!-- ===Memcache Client=== -->
 		<dependency>
 			<groupId>net.spy</groupId>
