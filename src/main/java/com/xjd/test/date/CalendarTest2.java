@@ -3,9 +3,10 @@ package com.xjd.test.date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
-public class CalendarTest {
+public class CalendarTest2 {
 
 	/**
 	 * <pre>
@@ -29,15 +30,15 @@ public class CalendarTest {
 		System.out.println(format.format(c.getTime()));
 		System.out.println(c.getActualMaximum(Calendar.DAY_OF_MONTH));
 		
+		c.set(Calendar.DAY_OF_MONTH, 31);
+		System.out.println(format.format(c.getTime()));
+		System.out.println(c.getActualMaximum(Calendar.DAY_OF_MONTH));
+		
 		c.add(Calendar.MONTH, 1);
 		System.out.println(format.format(c.getTime()));
 		System.out.println(c.getActualMaximum(Calendar.DAY_OF_MONTH));
 
-//		String s = "2014-02-31";
-//		Date date = format.parse(s);
-//		System.out.println(format.format(date));
 
-	
 	}
 
 }
