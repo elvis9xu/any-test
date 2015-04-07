@@ -16,7 +16,8 @@ public class ZoneTest {
 		System.out.println("=====================");
 
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-		SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.ENGLISH);
+		
+		SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 		format2.setTimeZone(TimeZone.getTimeZone("GMT+0"));
 		Date d = new Date();
 
