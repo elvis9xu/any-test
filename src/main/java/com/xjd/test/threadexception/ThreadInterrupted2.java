@@ -1,8 +1,3 @@
-/**
- * 
- *汇付天下有限公司
- * Copyright (c) 2006-2014 ChinaPnR,Inc.All Rights Reserved.
- */
 package com.xjd.test.threadexception;
 
 import java.io.FileOutputStream;
