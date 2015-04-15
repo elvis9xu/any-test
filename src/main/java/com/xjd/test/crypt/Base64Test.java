@@ -1,7 +1,5 @@
 package com.xjd.test.crypt;
 
-import static junit.framework.Assert.assertEquals;
-
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

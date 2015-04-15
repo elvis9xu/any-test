@@ -6,7 +6,6 @@ import java.util.UUID;
 
 import org.apache.log4j.Logger;
 
-import com.xjd.test.cache.client.impl.CPCacheClientImpl;
 
 /**
  * Cache的模板类.
@@ -16,7 +15,7 @@ import com.xjd.test.cache.client.impl.CPCacheClientImpl;
 public class CacheTemplate {
     public static final int DEFAULT_EXP_SECONDS = 86400; // 默认超时秒数，一天
 
-    private static final Logger log = Logger.getLogger(CPCacheClientImpl.class);
+	private static final Logger log = Logger.getLogger(CacheTemplate.class.getName());
 
     private CPCacheClient cacheClient;
 

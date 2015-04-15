@@ -216,3 +216,6 @@ pip-log.txt
 
 #maven
 target
+
+#idea
+.idea
