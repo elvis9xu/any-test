@@ -43,7 +43,7 @@ public final class UnsafeDoc {
 
 	static {
 		registerNatives();
-		sun.reflect.Reflection.registerMethodsToFilter(UnsafeDoc.class, "getUnsafe");
+//		sun.reflect.Reflection.registerMethodsToFilter(UnsafeDoc.class, "getUnsafe");
 	}
 
 	private UnsafeDoc() {
