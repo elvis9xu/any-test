@@ -1,52 +1,35 @@
 package com.xjd.test.time;
 
-import java.text.SimpleDateFormat;
+import java.io.IOException;
 import java.util.Date;
+
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class TimeTest {
 
-	public static void main(String[] args) {
-//		long t = 4294967295L;
-//
-//		System.out.println(System.currentTimeMillis());
-//		System.out.println(t * 1000);
-//		System.out.println(new Date(t * 1000L));
-<<<<<<< HEAD
+	public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException {
+//		A a = new A();
+//		a.setDate(new Date());
+//		
+//		ObjectMapper objMap = new ObjectMapper();
+//		String s = objMap.writeValueAsString(a);
+//		System.out.println(s);
+		System.out.println(System.currentTimeMillis());
+	}
 
-//		System.out.println(new Date().getTime());
-//
-//		long t = new Date().getTime();
-//		long utcTIme = Calendar.getInstance(TimeZone.getTimeZone("+0:00")).getTime().getTime();
-//		System.out.println(t);
-//		System.out.println(utcTIme);
-//		System.out.println(new Date());
+	public static class A {
+		private Date date;
 
-		long t = new Date().getTime();
+		public Date getDate() {
+			return date;
+		}
 
-		long d = t / 1000 / 60 / 60 / 24;
-		System.out.println(d);
+		public void setDate(Date date) {
+			this.date = date;
+		}
 
-		long r = t - d * 24 * 60 * 60 * 1000;
-		System.out.println(r);
-
-		long h = r / 1000 / 60 / 60;
-		System.out.println(h);
-
-		r = r - h * 60 * 60 * 1000;
-		System.out.println(r);
-
-		long m = r / 1000 / 60;
-		System.out.println(m);
-=======
-		
-		
-		Date now = new Date();
-		System.out.println(now.getTime());
-		
-		Date d = new Date(now.getTime());
-		String s = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(d);
-		System.out.println(s);
->>>>>>> origin/master
 	}
 
 }

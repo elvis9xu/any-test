@@ -1,228 +1,235 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-  xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.xjd.test.any</groupId>
-  <artifactId>any-test</artifactId>
-  <version>1.0.0</version>
-  <packaging>jar</packaging>
-  <name>any-test</name>
+	<groupId>com.xjd.test.any</groupId>
+	<artifactId>any-test</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+	<name>any-test</name>
 
-  <properties>
-    <java-version>1.6</java-version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <org.slf4j-version>1.7.1</org.slf4j-version>
-    <org.springframework-version>3.2.4.RELEASE</org.springframework-version>
-  </properties>
+	<properties>
+		<java-version>1.6</java-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.slf4j-version>1.7.1</org.slf4j-version>
+		<org.springframework-version>3.2.4.RELEASE</org.springframework-version>
+	</properties>
 
-  <dependencies>
-    <!-- ===log=== -->
-    <!-- slf4j + log4j -->
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>${org.slf4j-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>jcl-over-slf4j</artifactId>
-      <version>${org.slf4j-version}</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>${org.slf4j-version}</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.16</version>
-      <!--<scope>runtime</scope> -->
-    </dependency>
+	<dependencies>
+		<!-- ===log=== -->
+		<!-- slf4j + log4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${org.slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${org.slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+			<!--<scope>runtime</scope> -->
+		</dependency>
 
-    <!-- ===Test=== -->
-    <!-- Junit -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.10</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- spring-test -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>${org.springframework-version}</version>
-      <scope>test</scope>
-    </dependency>
+		<!-- ===Test=== -->
+		<!-- Junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- spring-test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+			<scope>test</scope>
+		</dependency>
 
-    <!-- ===Controller=== -->
-    <!-- Spring MVC -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
+		<!-- ===Controller=== -->
+		<!-- Spring MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
 
-    <!-- ===Service=== -->
-    <!-- Spring Base -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-core</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-beans</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-expression</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
-    <!-- CGLIB, only required and used for @Configuration usage -->
-    <dependency>
-      <groupId>cglib</groupId>
-      <artifactId>cglib-nodep</artifactId>
-      <version>2.2</version>
-    </dependency>
-    <!-- spring aop required -->
-    <dependency>
-      <groupId>aspectj</groupId>
-      <artifactId>aspectjweaver</artifactId>
-      <version>1.5.4</version>
-    </dependency>
+		<!-- ===Service=== -->
+		<!-- Spring Base -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<!-- CGLIB, only required and used for @Configuration usage -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<!-- spring aop required -->
+		<dependency>
+			<groupId>aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.5.4</version>
+		</dependency>
 
-    <!-- ===DAO=== -->
-    <!-- Spring JDBC -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-tx</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-oxm</artifactId>
-      <version>${org.springframework-version}</version>
-    </dependency>
-    <!-- c3p0连接池 -->
-    <dependency>
-      <groupId>c3p0</groupId>
-      <artifactId>c3p0</artifactId>
-      <version>0.9.1.2</version>
-    </dependency>
-    <!-- jdbc driver -->
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.19</version>
-    </dependency>
+		<!-- ===DAO=== -->
+		<!-- Spring JDBC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<!-- c3p0连接池 -->
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
+		<!-- jdbc driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.19</version>
+		</dependency>
 
-    <!-- ===Utils=== -->
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.xjd.util</groupId>
-      <artifactId>xjd-util</artifactId>
-      <version>1.0.0</version>
-    </dependency>
+		<!-- ===Utils=== -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xjd.util</groupId>
+			<artifactId>xjd-util</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 
-    <dependency>
-      <groupId>org.bouncycastle</groupId>
-      <artifactId>bcprov-jdk16</artifactId>
-      <version>1.46</version>
-      <optional>true</optional>
-    </dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.46</version>
+			<optional>true</optional>
+		</dependency>
 
-    <!-- ===JSON-RPC=== -->
-    <dependency>
-      <groupId>com.github.briandilley.jsonrpc4j</groupId>
-      <artifactId>jsonrpc4j</artifactId>
-      <version>1.0</version>
-    </dependency>
+		<!-- ===JSON-RPC=== -->
+		<dependency>
+			<groupId>com.github.briandilley.jsonrpc4j</groupId>
+			<artifactId>jsonrpc4j</artifactId>
+			<version>1.0</version>
+		</dependency>
 
-    <!-- ===Netty=== -->
-    <dependency>
-      <groupId>io.netty</groupId>
-      <artifactId>netty</artifactId>
-      <version>3.5.9.Final</version>
-    </dependency>
+		<!-- ===Netty=== -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty</artifactId>
+			<version>3.5.9.Final</version>
+		</dependency>
 
-    <!-- ===Memcache Client=== -->
-    <dependency>
-      <groupId>net.spy</groupId>
-      <artifactId>spymemcached</artifactId>
-      <version>2.10.4</version>
-    </dependency>
+		<!-- ===Memcache Client=== -->
+		<dependency>
+			<groupId>net.spy</groupId>
+			<artifactId>spymemcached</artifactId>
+			<version>2.10.4</version>
+		</dependency>
 
-    <dependency>
-      <groupId>dom4j</groupId>
-      <artifactId>dom4j</artifactId>
-      <version>1.6.1</version>
-    </dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
 
-    <dependency>
-      <groupId>org.mybatis.generator</groupId>
-      <artifactId>mybatis-generator-maven-plugin</artifactId>
-      <version>1.3.2</version>
-    </dependency>
+		<dependency>
+			<groupId>org.mybatis.generator</groupId>
+			<artifactId>mybatis-generator-maven-plugin</artifactId>
+			<version>1.3.2</version>
+		</dependency>
 
-    <!-- ===Lucene=== -->
-    <dependency>
-      <groupId>org.apache.lucene</groupId>
-      <artifactId>lucene-core</artifactId>
-      <version>4.7.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.lucene</groupId>
-      <artifactId>lucene-demo</artifactId>
-      <version>5.1.0</version>
-    </dependency>
-  </dependencies>
-  <build>
-    <plugins>
-      <!-- 配置编译器 -->
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>${java-version}</source>
-          <target>${java-version}</target>
-          <encoding>${project.build.sourceEncoding}</encoding>
-        </configuration>
-      </plugin>
+		<!-- ===Lucene=== -->
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+			<version>4.7.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-demo</artifactId>
+			<version>5.1.0</version>
+		</dependency>
 
-      <plugin>
-        <groupId>org.mortbay.jetty</groupId>
-        <artifactId>maven-jetty-plugin</artifactId>
-        <version>6.1.26</version>
-        <configuration>
-          <useTestClasspath>true</useTestClasspath>
-          <webAppSourceDirectory>${basedir}/src/main/resources/com/xjd/test/jsonrpc4j/server</webAppSourceDirectory>
-          <webXml>${basedir}/src/main/resources/com/xjd/test/jsonrpc4j/server/web.xml</webXml>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+		<dependency>
+			<groupId>com.darwinsys</groupId>
+			<artifactId>hirondelle-date4j</artifactId>
+			<version>1.5.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<!-- 配置编译器 -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<version>6.1.26</version>
+				<configuration>
+					<useTestClasspath>true</useTestClasspath>
+					<webAppSourceDirectory>${basedir}/src/main/resources/com/xjd/test/jsonrpc4j/server</webAppSourceDirectory>
+					<webXml>${basedir}/src/main/resources/com/xjd/test/jsonrpc4j/server/web.xml</webXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
