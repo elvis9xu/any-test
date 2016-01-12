@@ -7,6 +7,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.reflect.Method;
+import java.util.List;
 
 /**
  * <pre>
@@ -80,6 +81,7 @@ public class AnnotationTest {
 			Method helloM = Hello.class.getMethod("hello", null);
 			for (Annotation ann : helloM.getAnnotations()) {
 				System.out.println(ann);
+
 			}
 		}
 		{

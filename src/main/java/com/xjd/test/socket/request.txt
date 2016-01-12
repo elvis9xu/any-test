@@ -1,0 +1,13 @@
+POST /api/10/getDynamic HTTP/1.1
+Host: localhost:8095
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: null
+Accept-Encoding: gzip, deflate
+Content-Length: 135
+Content-Type: text/plain; charset=UTF-8
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+{"timestamp":1446017551679,"chr":"clt","uid":1187556,"token":"50BC779E411746DAA8691EA5F99AF797","dynamicId":"5629d5402662c024dc28c2a2"}

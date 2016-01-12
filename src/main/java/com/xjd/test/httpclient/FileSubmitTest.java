@@ -1,6 +1,8 @@
 package com.xjd.test.httpclient;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.http.HttpResponse;
@@ -16,7 +18,7 @@ import org.apache.http.util.EntityUtils;
 
 public class FileSubmitTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		HttpClient httpClient = HttpClients.createDefault();
 
 //		HttpPost httpPost = new HttpPost("http://10.83:8095/api/10/upload");
@@ -28,8 +30,8 @@ public class FileSubmitTest {
 
 		MultipartEntityBuilder mb = MultipartEntityBuilder.create();
 		mb.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
-//		mb.addBinaryBody("file", new File("D:/tmp/1.sql"));
-		mb.addBinaryBody("file", new File("D:/tmp/source.jpg"));
+		mb.addBinaryBody("file", new File("D:/tmp/1.sql"));
+//		mb.addBinaryBody("file", new FileInputStream("D:/tmp/source.jpg"));
 		mb.addTextBody("chr", "platform");
 		mb.addTextBody("token", "DCC6EAC7B0F94F5DAE64320A19E380DE");
 		mb.addTextBody("timestamp", System.currentTimeMillis() + "");

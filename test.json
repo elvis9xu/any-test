@@ -1,0 +1,49 @@
+{
+    "ifSuc":1,
+    "code": "200",
+    "msg": "查询成功",
+    "totalCount":110, // 数据总条数
+    "totalPageNum":3, // 总页数
+    "pageNum":1, // 当前页
+    "pageSize":50, // 每页条数
+    "data": {
+	    "orderInfo": [
+	        {
+	            "orderNumber": 1251810207, /* 订单号 */
+	            "totalAmount": 3760, /* 订单总价格  */
+	            "buyAmount": 2, /* 购买数量   */
+	            "payTime": "2015-05-15 14:20:30", /* 付款类型   */
+	            "payType": "货到付款", /* 支付类型  1：在线支付 2：货到付款 */
+	            "gmtCreated": "2015-05-15 14:20:30", /* 创建时间   */
+	            "buyerResult": { /* 收获者信息   */
+	                "address": "上海省 上海市 长宁区 娄山关路", /* 收获者地址   */
+	                "province": "上海",  /* 快递费用   */
+	                "city": "上海", /* 收获者移动电话 */
+	                "country": "长宁区",  /* 收获者姓名   */
+	                "mobilePhone": "18612345678", /* 收获者移动电话 */
+	                "username": "陈xx"  /* 收获者姓名   */
+	                "expressPrice": 8,  /* 快递费用   */
+	                "discountAmount": 8  /* 优惠金额   */
+	            },
+	            "orderDetail": [/* 药品清单 */
+	                {
+	                    "buyAmount": 2, /* 每种药购买数量 */
+	                    "factoryName": "中美天津史克制药有限公司", /* 制药公司 */
+	                    "licence": "国药准字H10900089", /* 每种药购买数量 */
+	                    "name": "布洛芬缓释胶囊", /* 药品名称 */
+	                    "price": 1480, /* 药品价格 , 单位分 */
+	                    "productCode": "12062101", /* 好药师药品id，主商品编码 */
+	                    "standard": "300mg×20粒/盒，铝塑泡罩"    /* 每种药规格 */
+	                }
+	            ],
+	            "invoiceInfos":1,// 发票信息，0：无需发票，1：需要发票
+	            "InvoiceDO": {/* 发票信息 */
+	                "invoiceSignal": "开票人标识:公司-个人",
+	                "invoiceTypeId": "发票类型",
+	                "invoiceContentId": "发票内容",
+	                "invoiceTitle": "开票人标识:公司-个人"
+	            }
+	        }
+	    ]
+	}
+}
