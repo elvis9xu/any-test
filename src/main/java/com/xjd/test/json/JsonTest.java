@@ -14,13 +14,14 @@ public class JsonTest {
 //		String txt = "{\"name\":\"hello\"}";
 		String txt = "{\"code\":\"0012\",\"msg\":\"参数msgId不能为空\",\"time\":1433845785030}";
 
-		Object s = objectMapper.readValue(txt, Map.class);
+		Map s = objectMapper.readValue(txt, Map.class);
 
 		System.out.println(s.getClass());
 
-		String s1 = objectMapper.writeValueAsString(null);
+		String s1 = objectMapper.writeValueAsString(s);
 		System.out.println(txt);
 		System.out.println(s1);
+		System.out.println(s.get("time").getClass());
 	}
 
 }

@@ -22,6 +22,7 @@
 		<root level="info">
 			<appender-ref ref="console" />
 		</root>
-		<Logger name="com.xjd" level="debug" />
+		<Logger name="com.xjd" level="INFO" />
+		<!--<Logger name="com.xjd" level="DEBUG" />-->
 	</loggers>
 </configuration>

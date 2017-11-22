@@ -11,7 +11,8 @@ import java.net.Socket;
 public class SocketTest {
 	public static void main(String[] args) throws IOException {
 		Socket socket = new Socket();
-		socket.connect(new InetSocketAddress("api3.91jkys.com", 8095));
+//		socket.connect(new InetSocketAddress("api3.91jkys.com", 8095));
+		socket.connect(new InetSocketAddress("localhost", 8971));
 		socket.setKeepAlive(false);
 		
 		OutputStream out = socket.getOutputStream();
@@ -37,7 +38,7 @@ public class SocketTest {
 				bout.write(buf, 0, c);
 				System.out.println(new String(buf, 0, c, "UTF-8"));
 			} else {
-				System.out.println("=====totall: " + t + "===========");
+//				System.out.println("=====totall: " + t + "===========");
 			}
 		}
 		bout.flush();

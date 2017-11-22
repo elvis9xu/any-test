@@ -1,0 +1,8 @@
+HTTP/1.1 200
+X-Application-Context: service-resource:8971
+Content-Type: text/plain;charset=ISO-8859-1
+Content-Length: 2
+Date: Mon, 14 Aug 2017 08:56:22 GMT
+
+OK
+

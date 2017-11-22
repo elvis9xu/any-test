@@ -1,5 +1,58 @@
-GET /api/20/listCircleFans HTTP/1.1
-Host: api3.91jkys.com:8095
+POST /api/test/raw HTTP/1.1
+Host: localhost:8971
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 Cache-Control: no-cache
-Postman-Token: f6383fd5-ef43-3259-3a11-a728d3291f9a
+Postman-Token: 54131c17-f8f0-cc2f-8b61-21b250906553
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="apiUser"
+
+accessTest01
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="apiKey"
+
+Ms7JQn6v35shk5w3
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="from"
+
+hello@wozai4u.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="fromName"
+
+您好
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="replyTo"
+
+elvis9xu@wozai4u.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="to"
+
+TEST1@maillist.sendcloud.org
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="subject"
+
+你牛B2
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="html"
+
+<p>你牛B</p><a href="http://www.baidu.com">百度</a>
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="labelId"
+
+136003
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="headers"
+
+{"SC-Custom--LabelID":"136003"}
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="useAddressList"
+
+true
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+
+
+
+
 
