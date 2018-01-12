@@ -29,5 +29,6 @@ public class Dom4jTest {
 
 		Node node = document.selectSingleNode("//xxx");
 		System.out.println(node.getStringValue());
+
 	}
 }
