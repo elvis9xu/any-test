@@ -14,35 +14,34 @@ import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.alipay.api.response.AlipayTradeRefundResponse;
 
 /**
- * 电脑网站支付
+ * 手机网站支付
  * @author elvis.xu
  * @since 2018-01-08 18:16
  */
-public class AlipayTest extends AlipayPassword {
+public class AlipayMobileWebTest extends AlipayPassword {
 	public static final String CHARSET = "UTF-8";
+	public static final String APP_ID = "2017110309695803";
 	public static final String URL = "https://openapi.alipay.com/gateway.do";
 
 	public static void main(String[] args) throws AlipayApiException {
 		AlipayClient alipayClient = new DefaultAlipayClient(URL, APP_ID, APP_PRIVATE_KEY, "json", CHARSET,
 				ALIPAY_PUBLIC_KEY, "RSA2");
-		tradeRefund(alipayClient);
+		wapPay(alipayClient);
 	}
 
 	// 发起支付
-	public static void pagePay(AlipayClient alipayClient) {
-		AlipayTradePagePayRequest request = new AlipayTradePagePayRequest();
+	public static void wapPay(AlipayClient alipayClient) {
+		AlipayTradeWapPayRequest request = new AlipayTradeWapPayRequest();
 		request.setReturnUrl("http://test-saas.wozai4u.com");
 		request.setNotifyUrl("http://test.vvaccess.com:9021/api/test/callback");
 		request.setBizContent("{" +
-				"\"out_trade_no\":\"TEST201801010010\"," +
-				"\"product_code\":\"FAST_INSTANT_TRADE_PAY\"," +
-				"\"total_amount\":0.03," +
+				"\"out_trade_no\":\"TEST201801010011\"," +
+				"\"product_code\":\"QUICK_WAP_PAY\"," +
+				"\"total_amount\":0.01," +
 				"\"subject\":\"好东西哦!\"," +
 				"\"body\":\"就是好东西哦!\"," +
 				"\"passback_params\":\"Type%3d3C%26merchantBizNo%3d2016010101111\"," +
-				"\"timeout_express\":\"1m\"," +
-				"\"qr_pay_mode\":\"4\"," + // 扫码方式
-				"\"qrcode_width\":\"100\"" + // 扫码方式
+				"\"timeout_express\":\"30m\"" +
 				"}");
 
 		try {
