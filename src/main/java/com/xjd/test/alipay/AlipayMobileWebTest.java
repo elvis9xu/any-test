@@ -33,9 +33,11 @@ public class AlipayMobileWebTest extends AlipayPassword {
 	public static void wapPay(AlipayClient alipayClient) {
 		AlipayTradeWapPayRequest request = new AlipayTradeWapPayRequest();
 		request.setReturnUrl("http://test-saas.wozai4u.com");
-		request.setNotifyUrl("http://test.vvaccess.com:9021/api/test/callback");
+//		request.setNotifyUrl("http://test.vvaccess.com:9021/api/test/callback");
+//		request.setNotifyUrl("http://vip.xxx.vvaccess.com");
+		request.setNotifyUrl("http://test-vip.wozai4u.com/");
 		request.setBizContent("{" +
-				"\"out_trade_no\":\"TEST201801010011\"," +
+				"\"out_trade_no\":\"MOBILE2018032011\"," +
 				"\"product_code\":\"QUICK_WAP_PAY\"," +
 				"\"total_amount\":0.01," +
 				"\"subject\":\"好东西哦!\"," +
