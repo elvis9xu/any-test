@@ -3,7 +3,6 @@ package com.xjd.test.cglib;
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import net.sf.cglib.proxy.Enhancer;
@@ -37,7 +36,7 @@ public class CglibTest {
 		} catch (IOException e) {
 		}
 		
-		Method m = InputStreamFeature.class.getMethod("reset", null);
+		Method m = InputStreamFeature.class.getMethod("hehe", null);
 		
 		try {
 			m.invoke(proxy, null);

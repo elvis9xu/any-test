@@ -20,4 +20,6 @@ public interface InputStreamFeature {
 	public void reset();
 
 	public boolean markSupported();
+
+	public void hehe();
 }
