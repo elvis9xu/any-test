@@ -156,11 +156,11 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.1</version>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>com.xjd.util</groupId>
 			<artifactId>xjd-util</artifactId>
 			<version>1.0.0</version>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.bouncycastle</groupId>
@@ -312,16 +312,16 @@
 			<artifactId>gson</artifactId>
 			<version>2.0.21</version>
 		</dependency>
-    <dependency>
-      <groupId>org.mongodb</groupId>
-      <artifactId>mongodb-driver</artifactId>
-      <version>3.0.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.mongodb.morphia</groupId>
-      <artifactId>morphia</artifactId>
-      <version>1.0.1</version>
-    </dependency>
+		<dependency>
+		  <groupId>org.mongodb</groupId>
+		  <artifactId>mongodb-driver</artifactId>
+		  <version>3.0.3</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.mongodb.morphia</groupId>
+		  <artifactId>morphia</artifactId>
+		  <version>1.0.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.esotericsoftware</groupId>
@@ -372,7 +372,7 @@
 			<artifactId>dom4j</artifactId>
 			<version>2.0.0</version>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>com.xjd.utils.basic</groupId>
 			<artifactId>basic-utils</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
@@ -381,7 +381,7 @@
 			<groupId>com.xjd.distributed.lock</groupId>
 			<artifactId>distributed-lock</artifactId>
 			<version>1.1.0-SNAPSHOT</version>
-		</dependency>
+		</dependency>-->
 		<!-- zookeeper -->
 		<dependency>
 			<groupId>org.apache.zookeeper</groupId>
@@ -489,6 +489,7 @@
 			<version>1.9.1</version>
 		</dependency>
 
+<<<<<<< HEAD
 		<!-- cglib -->
 		<dependency>
 			<groupId>cglib</groupId>
@@ -496,6 +497,46 @@
 			<version>3.2.7</version>
 		</dependency>
 
+=======
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.4.6</version>
+		</dependency>
+
+		<!-- jfinal -->
+		<dependency>
+			<groupId>com.jfinal</groupId>
+			<artifactId>jfinal</artifactId>
+			<version>3.4</version>
+		</dependency>
+
+		<!-- druid -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.1.10</version>
+		</dependency>
+
+		<!-- caffeine -->
+		<dependency>
+			<groupId>com.github.ben-manes.caffeine</groupId>
+			<artifactId>caffeine</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+
+		<!-- guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>26.0-jre</version>
+			<!-- or, for Android: -->
+			<!--<version>26.0-android</version>-->
+		</dependency>
+
+
+>>>>>>> 3007b462f42e21f2428ce1a4e5357b1428eb629e
 	</dependencies>
 	<build>
 		<resources>
